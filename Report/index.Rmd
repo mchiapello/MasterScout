@@ -1,0 +1,24 @@
+--- 
+title: "Analisi partita"
+author: "Marco Chiapello"
+date: "Created `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+params:
+    fold: "match/2022-05-22_TSEC"
+---
+
+# Statistica generale
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      error = FALSE)
+
+x <- datavolley::dv_read(paste0("../", params$fold, ))
+```
+
