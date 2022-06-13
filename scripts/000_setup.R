@@ -10,7 +10,7 @@ date <- "2022-05-22"
 us <- "PGS Foglizzese"
 opp <- "TSEC"
 mat <- paste0(date, "_", opp)
-dir_create(paste0("matches/", match)) 
+dir_create(paste0("matches/", mat)) 
     
 # Match info
 match <- tibble(date = lubridate::ymd(date),
